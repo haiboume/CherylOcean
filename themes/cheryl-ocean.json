@@ -1,13 +1,13 @@
 {
-  "name": "Cheryl",
+  "name": "CherylOcean",
   "colors": {
-    "editor.background": "#282c34", // 代码区大背景
-    "editor.foreground": "#faf3dd", // 代码区前景
-    "activityBar.background": "#282c34", // 活动栏背景色(最左侧那一栏)
-    "activityBar.border": "#4b4b4b", // 活动栏边框
-    "activityBar.foreground": "#faf3dd", // 活动栏前景色
-    "activityBarBadge.background": "#fb6107", // 活动栏提示数字的小圆点
-    "editor.lineHighlightBackground": "#282c34", //光标所在行高亮文本的背景颜色
+    "editor.background": "#282c34",
+    "editor.foreground": "#faf3dd",
+    "activityBar.background": "#282c34",
+    "activityBar.border": "#4b4b4b",
+    "activityBar.foreground": "#faf3dd",
+    "activityBarBadge.background": "#fb6107",
+    "editor.lineHighlightBackground": "#282c34",
     "sideBarTitle.foreground": "#faf3dd",
     "sideBar.background": "#282c34",
     "sideBar.border": "#4b4b4b",
@@ -15,20 +15,21 @@
     "tab.activeBackground": "#282c34",
     "tab.activeBorder": "#282c34",
     "tab.activeForeground": "#faf3dd",
-    "statusBar.background": "#282c34",
-    "statusBar.border": "#4b4b4b",
     "tab.inactiveBackground": "#1b2021",
     "tab.inactiveForeground": "#6c757d",
+    "statusBar.background": "#282c34",
+    "statusBar.border": "#4b4b4b",
+    "statusBar.foreground": "#faf3dd",
     "editor.selectionBackground": "#204182cc",
-    "editorGutter.background": "#ffffff0b",
+    "editorGutter.background": "#282c34",
     "titleBar.activeBackground": "#ffffff1a",
     "titleBar.inactiveBackground": "#ffffff10",
-    "titleBar.activeForeground": "#cccccc",
-    "statusBar.foreground": "#cccccc",
+    "titleBar.activeForeground": "#faf3dd",
     "editorSuggestWidget.background": "#303030",
-    "editorSuggestWidget.highlightForeground": "#cc6e2f",
+    "editorSuggestWidget.highlightForeground": "#fb6107",
     "editorSuggestWidget.selectedBackground": "#204182cc",
-    "badge.background": "#ffffff1a"
+    "badge.foreground": "#faf3dd",
+    "badge.background": "#fb6107"
   },
   "tokenColors": [
     {
@@ -96,7 +97,14 @@
     },
     {
       "name": "Types, Class Types",
-      "scope": "entity.name.type,meta.return.type,meta.type.annotation,meta.type.parameters,support.type.primitive",
+      "scope": "entity.name.type,meta.return.type,meta.type.annotation,meta.type.parameters",
+      "settings": {
+        "foreground": "#faf3dd"
+      }
+    },
+    {
+      "name": "Types, Class Types",
+      "scope": "support.type.primitive",
       "settings": {
         "foreground": "#CC8242"
       }
@@ -138,9 +146,16 @@
     },
     {
       "name": "Variable, Property",
-      "scope": "variable.property,variable.other.property,variable.other.object.property,variable.object.property,support.variable.property",
+      "scope": "variable.property,variable.other.property,variable.other.object.property,support.variable.property",
       "settings": {
         "foreground": "#98c1d9"
+      }
+    },
+    {
+      "name": "Variable, Property",
+      "scope": "variable.object.property",
+      "settings": {
+        "foreground": "#9E7BB0"
       }
     },
     {
@@ -256,13 +271,6 @@
       }
     },
     {
-      "name": "Class Name",
-      "scope": "entity.name.type.class",
-      "settings": {
-        "foreground": "#CCCCCC"
-      }
-    },
-    {
       "name": "Class Inheritances",
       "scope": "entity.other.inherited-class",
       "settings": {
@@ -301,7 +309,7 @@
       "name": "Regex",
       "scope": "string.regexp",
       "settings": {
-        "foreground": "#CC8242"
+        "foreground": "#7A964D"
       }
     },
     {
@@ -383,9 +391,9 @@
     },
     {
       "name": "CSS constant variables",
-      "scope": "support.constant.property-value.css,support.constant.property-value.scss",
+      "scope": "support.constant.property-value.css,support.constant.property-value.scss,keyword.other.unit.px.css",
       "settings": {
-        "foreground": "#A5C261"
+        "foreground": "#B2DE89"
       }
     },
     {

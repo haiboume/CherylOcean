@@ -68,6 +68,13 @@
       }
     },
     {
+      "name": "JSON String",
+      "scope": "support.type.property-name.json",
+      "settings": {
+        "foreground": "#56b6c2"
+      }
+    },
+    {
       "name": "Number",
       "scope": "constant.numeric",
       "settings": {
@@ -107,6 +114,20 @@
       "scope": "support.type.primitive",
       "settings": {
         "foreground": "#CC8242"
+      }
+    },
+    {
+      "name": "Library class/type",
+      "scope": ["support.type", "support.variable"],
+      "settings": {
+        "foreground": "#CC8242"
+      }
+    },
+    {
+      "name": "Class",
+      "scope": ["entity.name.class", "entity.name.module", "entity.name.type", "storage.identifier", "support.class"],
+      "settings": {
+        "foreground": "#FFC66D"
       }
     },
     {
